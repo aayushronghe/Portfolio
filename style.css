@@ -25,7 +25,7 @@ Special font = font3 */
 
 .sidebar{
     /* padding-top:11vh; */
-    /* position: absolute; */
+    position: fixed;
     background-color: #d2f6a4;
     /* width: 300px; */
     font-family: var(--font2);
@@ -210,7 +210,7 @@ hr{
 }
 
 .hamburger{
-    position: absolute;
+    position: fixed;
     top:10px;
     left:10px;
     cursor: pointer;
@@ -218,6 +218,7 @@ hr{
 
 .cross{
     margin-left:150px;
+    position: fixed;
 }
 
 .sidebarGo{
@@ -254,6 +255,7 @@ hr{
 
 .introContainer p{
     font-family: var(--font1);
+    font-size:1.4em;
 }
 
 .introContainer{
@@ -297,12 +299,12 @@ hr{
 }
 
 .sidebar_2{
-    /* position: absolute; */
+    position: fixed;
     padding-top:11vh;
     background-color: #caf78f;
     font-family: var(--font2);
     transition: transform 0.1s ease-in;
-    /* height:100vh; */
+    height:100vh;
 }
 
 .sidebar_2 nav{
@@ -328,6 +330,44 @@ hr{
 
 .my_intro{
     line-height: 45px;
+}
+
+/* FOR SERVICES PAGE */
+
+.service_list{
+    display: flex;
+    flex-direction: column;
+    margin-top:10vh;
+    align-items: center;
+}
+
+.main_3{
+    background-color:#f7d6ce;
+    width: 100%;
+    /* height: 100vh; */
+    font-family: var(--font1);
+    padding-left:20px;
+}
+
+.services{
+    margin:5vh;
+    padding: 2vw;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.services span{
+    font-family: var(--font3);
+    font-size: 1.3em;
+}
+
+.services img{
+    width:35vw;
+    aspect-ratio: 1/0.8;
+    margin-top: 20px;
 }
 
 @media (max-width:1100px){
@@ -383,6 +423,10 @@ hr{
 
     .star{
         font-size: 0.8em;
+    }
+
+    .main_2{
+        height: auto;
     }
 
 }
